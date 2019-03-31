@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.16.4",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "^8.0.3",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
@@ -13,7 +15,7 @@
     "build": "react-scripts next build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "next"
+    "dev": "next node server.js"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,6 +30,6 @@
   "main": "index.js",
   "devDependencies": {},
   "keywords": [],
-  "author": "",
+  "author": "Niyexdroid",
   "license": "ISC"
 }

@@ -27,43 +27,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "/Users/Niyexdroid/Documents/WEB PROJECTS/nextjs-todo-list/pages/index.js";
 
 
 
 
 
 
-var App =
+var Index =
 /*#__PURE__*/
 function (_Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(App, _Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _Component);
 
-  function App(props) {
+  function Index(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, App);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(App).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index).call(this, props));
     _this.state = {
-      todos: [{
-        id: 0,
-        text: 'Pray to Allah in the morning'
-      }, {
-        id: 1,
-        text: 'Cook for the house'
-      }, {
-        id: 2,
-        text: 'Do the rest of the house choirs'
-      }],
-      nextId: 3
+      todos: [],
+      nextId: 4
     };
     _this.addTodo = _this.addTodo.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
     _this.removeTodo = _this.removeTodo.bind(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this));
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(App, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
     key: "addTodo",
     value: function addTodo(todoText) {
       var todos = this.state.todos.slice();
@@ -91,73 +81,29 @@ function (_Component) {
       var _this2 = this;
 
       return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "App",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        },
-        __self: this
+        className: "App"
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
-        className: "todo-wrapper",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_8__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 45
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_todoin__WEBPACK_IMPORTED_MODULE_9__["default"], {
+        className: "todo-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_Header__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_todoin__WEBPACK_IMPORTED_MODULE_9__["default"], {
         todoText: "",
-        addTodo: this.addTodo,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 46
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("ul", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 47
-        },
-        __self: this
-      }, this.state.todos.map(function (map) {
+        addTodo: this.addTodo
+      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("ul", null, this.state.todos.map(function (todo) {
         return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_todoit__WEBPACK_IMPORTED_MODULE_10__["default"], {
           todo: todo,
           key: todo.id,
           id: todo.id,
-          removeTodo: _this2.removeTodo,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 50
-          },
-          __self: this
+          removeTodo: _this2.removeTodo
         });
-      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_style__WEBPACK_IMPORTED_MODULE_7__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 55
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_todoit__WEBPACK_IMPORTED_MODULE_10__["default"], {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 56
-        },
-        __self: this
-      }));
+      }))), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_components_style__WEBPACK_IMPORTED_MODULE_7__["default"], null));
     }
   }]);
 
-  return App;
+  return Index;
 }(react__WEBPACK_IMPORTED_MODULE_6__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (App);
+/* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ })
 
 })
-//# sourceMappingURL=index.js.ded708becfc71937c4f5.hot-update.js.map
+//# sourceMappingURL=index.js.b995c95f45294f945a47.hot-update.js.map

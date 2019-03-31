@@ -10,8 +10,13 @@ class Index extends Component {
         super(props);
         
         this.state = {
-            todos: [],
-            nextId: 3
+            todos: [
+                {id: 0, text: "Started taking tutorials on react"},
+                {id: 1, text: "plan on taking tutorials on NextJs"},
+                {id: 2, text: "Will begin class on expressjs as soon as am do with nextjs"},
+                {id: 3, text: "I need to develop problem analyzing skills"}
+            ],
+            nextId: 4
         }
     
         this.addTodo = this.addTodo.bind(this);
